@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello Pizza</title>
+</head>
+<body>
+    <header class="container">
+        <div class="header">
+            <h1>Hello Pizza</h1>
+        </div>
+    </header>
+    
+    <main>
+        <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="GET">
+            <div class="container">
+                <fieldset class="grupo1">
+                    <legend class="titulo">Conta:</legend>
+                    <div class="container-content">   
+                        <label for="">Email:</label>
+                        <input type="email" required>
+                    </div>
+
+                    <div class="container-content">
+                        <label for="">Senha:</label>
+                        <input type="password" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="grupo2">
+                    <legend class="titulo">Dados pessoais:</legend>
+                    <div class="container-content">
+                        <label>Nome:</label>
+                        <input type="text" required placeholder="Ex: Lucas">
+                    </div>
+
+                        
+                    <div class="container-content">
+                        <label>Foto de perfil:</label>
+                        <input accept="img/*" type="file">
+                    </div>
+
+                    <div class="container-content">
+                        <label>Telefone:</label>
+                        <input type="number" required placeholder="Ex: (51) 99999 - 9999">
+                    </div>
+
+                    <div class="container-content">
+                        <label>Sexo:</label>
+                        <input type="radio" checked name="sexo" value="masculino">
+                        <label>Masculino</label>
+                        <input type="radio" name="sexo" value="feminino">
+                        <label>Feminino</label>
+                    </div>
+
+                    <div class="container-content">
+                        <label>Data:</label>
+                        <input name="data" type="date">
+                    </div>
+                </fieldset>
+
+                <fieldset class="grupo3">
+                    <legend class="titulo">Endereço:</legend>
+                    <div class="container-content">
+                        <label>Rua:</label>
+                        <input required name="endereco_rua" type="text">
+                    </div>
+
+                    <div class="container-content">
+                        <label>Complemento:</label>
+                        <input required name="endereco_complemento" type="text">
+                    </div>
+                    
+                    <div class="container-content">
+                        <label>Número:</label>
+                        <input required name="endereco_numero" type="number" min="1" max="9999">
+                    </div>
+
+                    <div class="container-content">
+                        <label>Cidade:</label>
+                        <input required name="endereco_cidade" type="text">
+                    </div>
+
+                    <div class="container-content">
+                        <label>Estado:</label>
+                        <select name="endereco_estado">
+                            <option disabled value="disabled">select</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="rs">Rio Grande do Sul</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="ba">Bahia</option>
+                            <option value="am">Amazonas</option>
+                            <option value="sc">Santa Catarina</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="grupo4">
+                    <legend class="titulo">Anúncio:</legend>
+                    <div class="container-content">
+                        <label>Como conheceu a Hello Pizza?</label>
+                        <textarea maxlength="256" name="como_conheceu_o_site" placeholder="Nos conte aqui como conheceu a nossa pizzaria :)"></textarea>
+                    </div>
+
+                    <div class="container-content">
+                        <input checked name="receber_anuncio" type="checkbox">
+                        <label>Desejo receber ofertas por e-mail</label>
+                    </div>
+
+                    <div class="bbt">
+                        <button value="enviar" type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>Desenvolvido por Lucas de Paula</p>
+            <p>&#169 Dev Media</p>
+        </div>
+    </footer>
+</body>
+</html>
